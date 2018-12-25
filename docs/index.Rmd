@@ -1,0 +1,77 @@
+---
+title: '<div class="jumbotron"><h1 class="title toc-ignore display-3" align="center">Minds and Machines</h1><p class="lead" align="center">Danielle Navarro</p></div>'
+output:
+  html_document:
+    theme: flatly
+    highlight: textmate
+    css: mystyle.css
+pagetitle: "Minds and Machines"
+---
+
+```{r,echo=FALSE}
+rm(list=objects()) # start with a clean workspace
+```
+
+One of the long-standing tensions in cognitive science is the relationship between human cognition and machine learning. Can modern machine learning methods teach us anything interesting about the human mind? Does cognitive psychology have a role to play in guiding the development of artificial intelligence systems? Why are machine learning systems so much better than humans at chess, but not so good at the Atari game Frostbite? The goal in this elective is to provide an introduction to the current state of the art in computational cognitive science. On the "minds" side, we'll discuss papers examining topics in human learning, reasoning, decision making and social cognition. On the "machines" side, we'll go through a very gentle introduction to programming in R and building computational models of human cognition. 
+
+GitHub repository: https://github.com/djnavarro/minds-machines-4103
+
+### Class schedule
+
+- Week 1: **Introduction to the topic**
+
+- Week 2: **Top down versus bottom up**
+    - Griffiths, T. L., Chater, N., Kemp, C., Perfors, A., & Tenenbaum, J. B. (2010). Probabilistic models of cognition: Exploring representations and inductive biases. *Trends in Cognitive Sciences, 14*(8), 357-364.
+    - McClelland, J. L., Botvinick, M. M., Noelle, D. C., Plaut, D. C., Rogers, T. T., Seidenberg, M. S., & Smith, L. B. (2010). Letting structure emerge: Connectionist and dynamical systems approaches to cognition. *Trends in Cognitive Sciences, 14*(8), 348-356.
+
+- Week 3: **Associative learning**
+    - Rescorla, R. A. & Wagner, A. R. (1972) A theory of Pavlovian conditioning: Variations in the effectiveness of reinforcement and nonreinforcement. In A. H. Black & W. F. Prokasy (eds) *Classical conditioning II: Current Research and Theory* (pp 64-99). New York: Appleton-Century-Crofts
+    - DIY exercise: Implementing the Rescorla-Wagner model
+
+- Week 4: **Connectionist networks**
+    - Rumelhart, D. E., Hinton, G. E., & Williams, R. J. (1986). Learning representations by back-propagating errors. *Nature, 323*(6088), 533.
+    - DIY exercise: Implementing a backpropagation network
+
+- Week 5: **Bayesian cognition**
+    - Griffiths, T. L., & Tenenbaum, J. B. (2006). Optimal predictions in everyday cognition. *Psychological Science, 17*(9), 767-773.
+    - DIY exercise: Implementing the optimal predictions model
+
+- Week 6: **Bayesian perception**
+    - Yuille, A. L. &l; Kersten, D. (2006). Vision as Bayesian inference: Analysis by synthesis? *Trends in Cognitive Science, 10*(7), 301-308.
+    - DIY exercise: Implementing a Bayesian perception model
+
+- Week 7: **Large scale models of mental representation**
+    - De Deyne, S., Kenett, Y. N., Anaki, D., Faust, M. and Navarro, D.J. (2016). Large-scale network representations of semantics in the mental lexicon. In M. N. Jones (Ed.) *Big Data in Cognitive Science: From Methods to Insights* (pp. 174-202)
+    - DIY exercise: Implementing a semantic network model
+
+- Week 8: **Deep learning versus program learning**
+    - Mnih, V., Kavukcuoglu, K., Silver, D., Rusu, A. A., Veness, J., Bellemare, M. G., ... & Petersen, S. (2015). Human-level control through deep reinforcement learning. *Nature, 518*(7540), 529.
+    - Lake, B. M., Salakhutdinov, R. and Tenenbaum, J. B. (2015). Human-level concept learning through probabilistic program induction. *Science, 350*(6266), 1332–1338.
+
+- Week 9: **Machines that learn and think like people**
+    - Lake, B. M., Ullman, T. D., Tenenbaum, J. B., & Gershman, S. J. (2017). Building machines that learn and think like people. *Behavioral and Brain Sciences, 40.*
+
+### Assessment
+
+- Class participation (30%) – This includes participation in the seminars in which you do not present. If you haven't read the papers and so can't contribute much, low marks will be given. It also includes participation in the programming exercises - however, this is not a programming class and in this respect the assessment is based mostly on effort, not on whether you succeed in implementing the models
+
+- Coursework I (20%) - a 400 word summary relating to your presentation. This should include (a) a summary of the content of the paper(s) that you were presenting. What the question was, how the researchers investigated that question, what they found, and what the interpretation and implications of those findings are. Finally, it should include a brief critique / additional thoughts / highlights / limitations. In other words, you should have a description of the paper(s), and something that goes beyond that description. To be emailed to me by 5pm on the day a week following your presentation.
+
+- Coursework II (50%) – a 2000 word essay, chosen from a set of titles that will be provided in the first week. To be submitted via the Turnitin link on Moodle, deadline to be confirmed.
+
+### Essay questions
+
+There are three "topics" for the essay question, each of which is designed to allow you a fair bit of flexibility in what you talk about:
+
+- Mathematical and computational modelling have a long history in psychology, dating back (at least!) to work by Fechner and Ebbinghaus in the 19th century. Is it worth it? Does this intellectual tradition buy us anything as a discipline? If not, why are we doing it? If so, what do we get for this effort? Discuss!
+
+- Throughout the readings on computational modelling there seems to be an undercurrent of tension between "psychological" questions (e.g., is this how humans learn?) and "statistical" ones (e.g., does this learning rule work?). Is this a tension that poses a real concern? Discuss!
+
+- Bayesian modellers and connectionists often seem to be at odds with one another. Is one approach better than the other? Are they compatible, or reconcilable? Discuss!
+
+Obviously, each of these is a much bigger topic than you can address in a 2000 word essay, and you are not expected to cover the full scope of your topic! Rather, your task in this essay is to select one of these topics, find a perspective on the topic that you want to address, and then write about it! In short, you have a great deal of freedom in how you choose to approach the essay.
+
+### Other information
+
+Helpful tips when preparing your presentation: your primary goal should be to explain to other students what the key ideas are. The material covered in this class is often intimidating because of the technical details, and your task is to help other students understand what is going on in the papers. Your secondary goal should be to invite discussion, to involve other students in a conversation about those ideas. Do you agree with the ideas in the paper? Do you find the experimental evidence convincing? Why or why not? What other literature have you come across in the process of researching your assigned topic. A useful trick in this case is to ask – if you had to run an experiment in this area, what would you want to do?
+

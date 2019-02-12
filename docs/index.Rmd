@@ -30,7 +30,7 @@ Week 2: **Top down versus bottom up**
 Week 3: **Associative learning**
 
 - Rescorla, R. A. & Wagner, A. R. (1972) [A theory of Pavlovian conditioning: Variations in the effectiveness of reinforcement and nonreinforcement](https://pdfs.semanticscholar.org/afaf/65883ff75cc19926f61f181a687927789ad1.pdf). In A. H. Black & W. F. Prokasy (eds) *Classical conditioning II: Current Research and Theory* (pp 64-99). New York: Appleton-Century-Crofts
-- DIY exercise: [Implementing the Rescorla-Wagner model](/rescorlawagner/)
+- DIY exercise: [Implementing the Rescorla-Wagner model](rescorla_wagner.html)
 
 
 <br>

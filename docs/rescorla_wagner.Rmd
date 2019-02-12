@@ -1,18 +1,18 @@
 ---
-title: '<div class="jumbotron"><h1 class="title toc-ignore display-3" align="center">Minds and Machines: Rescorla-Wagner</h1><p class="lead" align="center">Danielle Navarro</p></div>'
+title: '<div class="jumbotron"><h1 class="title toc-ignore display-3" align="center">Minds and Machines</h1><p class="lead" align="center">Danielle Navarro</p></div>'
 output:
   html_document:
     theme: flatly
     highlight: textmate
-    css: ../mystyle.css
+    css: mystyle.css
 pagetitle: "Minds and Machines"
 ---
 
-[<- Back to home](/)
+# The Rescorla-Wagner Model
 
-For this week's exercise our goal is to write an R script that that implements the [Rescorla-Wagner model](http://www.scholarpedia.org/article/Rescorla-Wagner_model) of associative learning, and apply it to a few simple experimental designs. For this tutorial, you should aim to write your own script by following the instructions on this page, *but* in case you get stuck, all the code in this section is also available in the [rescorla_wagner.R](./rescorla_wagner.R) script.
+[<- Back to home](./index.html)
 
-## Rescorla-Wagner
+For this week's exercise our goal is to write an R script that that implements the [Rescorla-Wagner model](http://www.scholarpedia.org/article/Rescorla-Wagner_model) of associative learning, and apply it to a few simple experimental designs. For this tutorial, you should aim to write your own script by following the instructions on this page, *but* in case you get stuck, all the code in this section is also available in the [rescorla_wagner.R](rescorla_wagner.R) script.
 
 The Rescorla-Wagner model provides a learning rule that describes how associative strength changes during Pavlovian conditioning. Suppose we take an initially neutral stimulus (e.g., a tone), and pair it with an outcome that has inherent value to the organism (e.g., food, shock). Over time the organism learns to associate the tone with the shock and will respond to the tone in much the same way that it does to the shock. In this example the shock is referred to as the *unconditioned stimulus* (US) and the tone is the *conditioned stimulus* (CS). 
 

@@ -20,8 +20,8 @@ All of the teaching materials associated with this class are available via the [
 
 Week 1: **Introduction to the topic**
 
-- Introduction to computational cognitive science **[TBA]**
-- Getting started in R: see [R for Psychological Science](http://psyr.org)
+- Introduction to computational cognitive science: slides from 2018 are [here](introduction.pdf)
+- Getting started in R: exercises will follow [R for Psychological Science](http://psyr.org)
 
 <br>
 Week 2: **Top down versus bottom up**
@@ -47,28 +47,28 @@ Week 4: **Connectionist networks**
 Week 5: **Bayesian cognition**
 
 - Griffiths, T. L., & Tenenbaum, J. B. (2006). [Optimal predictions in everyday cognition](http://web.mit.edu/cocosci/Papers/Griffiths-Tenenbaum-PsychSci06.pdf). *Psychological Science, 17*(9), 767-773.
-- DIY exercise: Implementing the optimal predictions model
+- DIY exercise: Implementing the optimal predictions model. (TBA - the exercise will be based on the content [here](https://github.com/djnavarro/minds-machines-4103/tree/master/optimalprediction))
 
 
 <br>
 Week 6: **Bayesian perception**
 
 - Feldman N. H. & Griffiths, T. L. (2007). [A rational account of the perceptual magnet effect](http://users.umiacs.umd.edu/~nhf/papers/PerceptualMagnet.pdf). *Proceedings of the 29th Annual Conference of the Cognitive Science Society*. ([long version](http://users.umiacs.umd.edu/~nhf/papers/PerceptualMagnetLong.pdf))
-- DIY exercise: Implementing the perceptual magnet model 
+- DIY exercise: Implementing the perceptual magnet model (TBA - the exercise will be based on the content [here](https://github.com/djnavarro/minds-machines-4103/tree/master/perceptualmagnet))
 
 
 <br>
 Week 7: **Semantic representation**
 
 - De Deyne, S., Navarro, D. J., Perfors, A., Brysbaert M., and Storms, G. (in press). [The Small World of Words English word association norms for over 12,000 cue word](https://link.springer.com/article/10.3758%2Fs13428-018-1115-7). *Behavior Research Methods* ([preprint version](http://compcogscisydney.org/publications/DeDeyneNPBS_swow.pdf))
-- DIY exercise: Implementing a semantic network model
+- DIY exercise: Implementing a semantic network model (TBA - the exercise will be based on the content [here](https://github.com/djnavarro/minds-machines-4103/tree/master/semanticnetwork))
 
 
 <br>
 Week 8: **Language and cultural evolution**
 
 - Navarro, D.J., Perfors, A., Kary, A., Brown, S. and Donkin, C. (2018). [When extremists win: Cultural transmission via iterated learning when priors are heterogeneous](https://onlinelibrary.wiley.com/doi/full/10.1111/cogs.12667) *Cognitive Science, 42*, 2108-2149 ([preprint version](http://compcogscisydney.org/publications/NavarroPKBD_mixedchains.pdf))
-- DIY exercise: Bayesian iterated learning
+- DIY exercise: Bayesian iterated learning (TBA - the exercise will be based on the content [here](https://github.com/djnavarro/mixedchains))
 
 
 <br>

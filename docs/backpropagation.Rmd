@@ -12,10 +12,8 @@ pagetitle: "Minds and Machines"
 
 [<- Back to home](./index.html)
 
-```{r,echo=FALSE,message=FALSE,warning=FALSE}
-rm(list=objects()) # start with a clean workspace
-source("knitr_tweaks.R")
-library(tidyverse,quietly = TRUE)
+```{r libraries, message=FALSE,warning=FALSE}
+library(tidyverse)
 ```
 
 Last week's exercise covered the Rescorla-Wagner model. In this week's exerise we'll expand this to cover the **backpropagation rule** for learning in connectionist networks. For this exercise, however, we'll only cover the simplest kind of backpropagation network, with just two layers.
@@ -182,11 +180,10 @@ Not surprisingly everything to setosa has gone up and the others down. But notic
 For the actual simulation I'll set the learning rate to .01, run it for 5000 epochs and average across 100 independent runs just to smooth out any artifacts of randomisation^[The script to run it is [here](./iris_twolater3.R), a csv with the connections weights is [here](./iris_weights.csv), another one (36Mb) with sum squared error to each item on each presentation as a zipped csv file [here](./iris_sse.csv.zip)] How the weights change over epochs:
 
 ```{r, cache=TRUE, message=FALSE, warning=FALSE, echo=FALSE}
-tidy_weights <- here::here("output","iris_weights.csv") %>%
-  read_csv()
+tidy_weights <- read_csv("https://djnavarro.github.io/minds-machines-4103/iris_weights.csv")
 ```
 
-```{r backpropweights, fig.show='animate', interval=0.05, cache=TRUE, message=FALSE, echo=FALSE, eval = FALSE, fig.width=8, fig.height=5, animation.hook='gifski'}
+```{r backpropweights, warning=FALSE, cache=TRUE, animation.hook='gifski', fig.show='animate', interval=0.05, message=FALSE, echo=FALSE, fig.width=8, fig.height=5, animation.hook='gifski'}
 for(b in seq(from = 1, to = 4999, by = 10)) {
   
   pic4 <- tidy_weights %>%
@@ -202,21 +199,10 @@ for(b in seq(from = 1, to = 4999, by = 10)) {
   
 }
 ```
-<!-- NOTE:
-ffmpeg -i backpropweights.webm backpropweights.gif -hide_banner
-ffmpeg -i backpropweights.webm backpropweights.mp4 -hide_banner
--->
-<video width="800" style="display:block; margin: 0 auto;" controls>
-<source src="./img/backpropweights.webm" type="video/webm">
-<source src="./img/backpropweights.mp4" type="video/mp4">
-Your browser does not support the video tag
-</video>
-<br>
 
 
 ## Resources
 
-- The Rumelhart et al (1986) paper cached for teaching purposes [here](http://compcogscisydney.org/mm/2018/Rumelhart1986.pdf)
 - A very good, but somewhat technical [summary](http://neuralnetworksanddeeplearning.com/chap2.html) of backpropagation by Michael Nielsen
 - Really nice [resources](http://neuroplausible.com/connectionism) in Python by Olivia Guest.
 

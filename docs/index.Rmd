@@ -40,7 +40,7 @@ Week 3: **Associative learning**
 Week 4: **Connectionist networks**
 
 - Rumelhart, D. E., Hinton, G. E., & Williams, R. J. (1986). [Learning representations by back-propagating errors](https://www.iro.umontreal.ca/~vincentp/ift3395/lectures/backprop_old.pdf). *Nature, 323*(6088), 533.
-- DIY exercise: Implementing a backpropagation network
+- DIY exercise: [Implementing a backpropagation network](backpropagation.html)
 
 
 <br>

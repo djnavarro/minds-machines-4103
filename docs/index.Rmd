@@ -14,9 +14,9 @@ rm(list=objects()) # start with a clean workspace
 
 One of the long-standing tensions in cognitive science is the relationship between human cognition and machine learning. Can modern machine learning methods teach us anything interesting about the human mind? Does cognitive psychology have a role to play in guiding the development of artificial intelligence systems? Why are machine learning systems so much better than humans at chess, but not so good at the Atari game Frostbite? The goal in this elective is to provide an introduction to the current state of the art in computational cognitive science. On the "minds" side, we'll discuss papers examining topics in human learning, reasoning, decision making and social cognition. On the "machines" side, we'll go through a very gentle introduction to programming in R and building computational models of human cognition. 
 
-GitHub repository: https://github.com/djnavarro/minds-machines-4103
+All of the teaching materials associated with this class are available via the [GitHub repository](https://github.com/djnavarro/minds-machines-4103), but if you aren't familiar with git (and very few psychology students are), everything you need can be downloaded from this website.
 
-### Class schedule
+## 1. Class schedule
 
 - Week 1: **Introduction to the topic**
 
@@ -37,7 +37,7 @@ GitHub repository: https://github.com/djnavarro/minds-machines-4103
     - DIY exercise: Implementing the optimal predictions model
 
 - Week 6: **Bayesian perception**
-    - Yuille, A. L. &l; Kersten, D. (2006). Vision as Bayesian inference: Analysis by synthesis? *Trends in Cognitive Science, 10*(7), 301-308.
+    - Feldman & Griffiths?
     - DIY exercise: Implementing a Bayesian perception model
 
 - Week 7: **Large scale models of mental representation**
@@ -51,27 +51,67 @@ GitHub repository: https://github.com/djnavarro/minds-machines-4103
 - Week 9: **Machines that learn and think like people**
     - Lake, B. M., Ullman, T. D., Tenenbaum, J. B., & Gershman, S. J. (2017). Building machines that learn and think like people. *Behavioral and Brain Sciences, 40.*
 
-### Assessment
+## 2. Assessment structure
 
-- Class participation (30%) – This includes participation in the seminars in which you do not present. If you haven't read the papers and so can't contribute much, low marks will be given. It also includes participation in the programming exercises - however, this is not a programming class and in this respect the assessment is based mostly on effort, not on whether you succeed in implementing the models
+- *Presentation* (30%). Each student will be expected to put together a presentation that relates to one of the discussion papers, and to lead the group discussion. You should submit your slides to Danielle, along with a 400 word summary, within one week of your presentation. The assessment takes all three components (the presentation, the slides, and the summary) into account. For the summary you should include a *brief* summary of the content of the paper(s) that you were presenting. What the question was, how the researchers investigated that question, what they found, and what the interpretation and implications of those findings are. You can (and perhaps should) also include a brief critique / additional thoughts / highlights / limitations. In other words, your summary should include some indication of how you have gone beyond the content of the paper itself in forming your opinions. 
 
-- Coursework I (20%) - a 400 word summary relating to your presentation. This should include (a) a summary of the content of the paper(s) that you were presenting. What the question was, how the researchers investigated that question, what they found, and what the interpretation and implications of those findings are. Finally, it should include a brief critique / additional thoughts / highlights / limitations. In other words, you should have a description of the paper(s), and something that goes beyond that description. To be emailed to me by 5pm on the day a week following your presentation.
+- *Participation* (20%). Class participation is an important part of the course. That means that you are expected to read the papers *before* coming to class. If you haven't read the papers and so can't contribute much, low marks will be given. It also includes participation in the programming exercises - *however*, this is not a programming class and in this respect the assessment is based almost entirely on effort and engagement, not on whether you succeed in implementing the models. Finally, I do try to keep track of how people participate. Please see below for some thoughts as to what I consider a "good participant" to be - it doesn't necessarily mean talking a lot! 
 
-- Coursework II (50%) – a 2000 word essay, chosen from a set of titles that will be provided in the first week. To be submitted via the Turnitin link on Moodle, deadline to be confirmed.
+- *Essay* (50%) – a 2000 word essay. To be submitted via the Turnitin link on Moodle, deadline to be confirmed (but will be toward the end of term). 
 
-### Essay questions
+## 3. The essay question
 
-There are three "topics" for the essay question, each of which is designed to allow you a fair bit of flexibility in what you talk about:
+Throughout the class we have discussed a number of computational models of human learning, perception and cognition, and in the practical exercises you have implemented several of these models yourself. For the essay topic your task is to pick a model (which can be one of the ones we discussed, or something else) and provide a critical discussion of it's value to the field. Specific questions you may want to consider include
+(a) what claims does this model make, and what does it not claim, (b) what evidence supports/does not support the model, and (c) a commentary on the extent to which the model helps us understand something about the human mind. You can structure the essay in whatever form you think is most appropriate (e.g., you shouldn't structure it in this "a/b/c" way I have!) and you can bring in literature from other areas to make your case. 
 
-- Mathematical and computational modelling have a long history in psychology, dating back (at least!) to work by Fechner and Ebbinghaus in the 19th century. Is it worth it? Does this intellectual tradition buy us anything as a discipline? If not, why are we doing it? If so, what do we get for this effort? Discuss!
+One other thing I want to mention with the essay is that I tend to allow you a lot of scope to interpret the question the way you would like. I'd prefer to grade your best work, on a topic you care deeply about, than to try to assess something that you aren't all that excited about. As a consequence, if you have some thoughts about the direction you want to go with it, and aren't sure if it's withing the scope of the topic, please get in touch with me to discuss it!
 
-- Throughout the readings on computational modelling there seems to be an undercurrent of tension between "psychological" questions (e.g., is this how humans learn?) and "statistical" ones (e.g., does this learning rule work?). Is this a tension that poses a real concern? Discuss!
-
-- Bayesian modellers and connectionists often seem to be at odds with one another. Is one approach better than the other? Are they compatible, or reconcilable? Discuss!
-
-Obviously, each of these is a much bigger topic than you can address in a 2000 word essay, and you are not expected to cover the full scope of your topic! Rather, your task in this essay is to select one of these topics, find a perspective on the topic that you want to address, and then write about it! In short, you have a great deal of freedom in how you choose to approach the essay.
-
-### Other information
+## 4. On leading a paper discussion
 
 Helpful tips when preparing your presentation: your primary goal should be to explain to other students what the key ideas are. The material covered in this class is often intimidating because of the technical details, and your task is to help other students understand what is going on in the papers. Your secondary goal should be to invite discussion, to involve other students in a conversation about those ideas. Do you agree with the ideas in the paper? Do you find the experimental evidence convincing? Why or why not? What other literature have you come across in the process of researching your assigned topic. A useful trick in this case is to ask – if you had to run an experiment in this area, what would you want to do?
+
+On a practical note, I generally suggest getting started on the presentation well in advance. Many of the papers we're talking about are hard reading, and you may want to get in touch with me to talk through your preparation, to check in to see if you've understood the material and so on. I am happy to do this, but I strongly recommend not trying to cram that in at the last minute because my schedule is often very constrained and I cannot always meet with you on short notice.
+
+## 5. On participation
+
+One thing I have noticed over the years is that students are often unsure about what it means to participate effectively within the classroom. Quite commonly, people fall for the error of assuming that "speaking a lot" is the same thing as "contributing well". I'd like to push back against this idea a little and talk about what I think makes for good classrooms...
+
+### 5.1 You aren't obligated to speak
+
+Very often I encounter students who are quiet, thoughtful and tend not to speak much. This is totally okay - not everyone in the classroom needs to be talking a lot. On the other hand, I also notice that very often those same students will sometimes talk to me afterwards about a topic and (surprise!) it turns out that they’ve had some deeply insightful thoughts about something that we’d discussed during the class, but never managed to find an opportunity to say them out loud.
+To my mind, there’s nothing wrong with that mode of participation, and in the classroom context I do consider “came up to me afterwards and talked about your thoughts” to be a valid form of class participation. Quiet folks can get top marks for participation that way!
+
+### 5.2 Monitor your contributions
+
+My comment above notwithstanding, I do think it’s important to work on the dynamics of the room in a way that allows *everyone* have a chance to speak if they want to. To the extent that there are people in the room who have wonderful thoughts that no-one ever gets to hear, it feels like a loss to everyone. With that in mind, I think it’s super helpful for every participant in a discussion to ask yourself ... pay attention to how often you speak!
+
+- If there are 10 people in the room and you notice that you are always the first or second person to talk then you’re almost certainly talking too much. Take a step back and let other people hold the floor for a while. Not every conversation needs your voice.
+
+- If there are 10 people in the room and you notice that you’re almost never able to "find an opportunity" for you to talk, then you’re almost certainly being unfairly left out. If it’s come to that point it’s totally okay for you to start being a little more assertive about making yourself heard.
+
+As a general rule, **it’s better to aim for a few really good, thoughtful contributions to the discussion than to provide many “hot takes”.** Too many hot takes makes it very hard to have good discussion, in fact.
+
+### 5.3 Help each other
+
+My impression over the years is that the best discussions almost never occur when people are “arguing”. It’s kind of a trite point to make but when you begin your conversational turn by saying “BUT WHAT ABOUT X” you will tend to put the other person on the defensive. Rather than engage with you, they’ll tend to fall back on their own position and the end result tends to be polarising: everyone walks away from the conversation a little frustrated and no-one changes their minds.
+
+A better approach, in my experience, is the one in which you frame your contribution as a way of building on what previous speakers have said. Starting your conversational turn by saying “That’s really interesting, and made me wonder about X” almost always works better, because you are allowing room for the person you’re responding to. It lets them pick up on your line of thinking and incorporate it into their own.
+
+It’s also worth noting that you can “repair” an initially unhelpful contribution. For instance, if you suddenly realise you’ve gone a little overboard in asserting a strong position, and not left any conversational room for other people to join in, it’s easy to redress by adding some hedges in your own speech (e.g., “But honestly I’m not 100% sure - what do you think?”) is a surprisingly effective way of letting other people back into the conversation.
+
+As a general rule I think that consensus building and thoughtful dissent are both useful contributions to make in a discussion: abrasiveness or competitiveness is almost never helpful.
+
+### 5.4 Learn to let go!
+
+Occasionally, despite our best efforts, we all get fixated on a particular topic. Sometimes, the right thing to do is just let it drop. If you notice that you and one other student have entered into a back and forth with one another and no-one else is getting any chance to talk, a good thing to do is for *both* parties to stop for a bit and let other voices in the room take over. It usually helps everyone when that happens because the conversation can “reboot” a little and it tends to take some of the heat out of the discussion.
+
+### 5.5 Invite others in
+
+If you notice someone else who hasn’t spoken for a bit looking like they want to speak, invite them in to the conversation. This is much easier than you think it is - if you’ve started saying something and you notice that you’ve spoken over the top of the person who was trying to speak, all you have to do is say “oh wait ... you were going to say something ... you go, I’ve been talking lots!” Simple acts like this do wonders to open up the conversation. Similarly, if you realise you’re saying something very similar to something another student has said, *point that out*. Acknowledging other people’s contributions to the conversation does a lot of good in making everyone aware of how much of a collaborative effort a good discussion is!
+
+### 5.6 Jokes are good, but tread lightly
+
+There’s a lot to be said about having a lighthearted attitude, and a little bit of silliness goes a long way in the classroom (and in real life). It does a lot to make the room a little more informal, it’s a nice way to build connections with your colleagues and peers, and so on. I’m all in favour of it!
+
+However, some care is required. Not everyone will share your sense of humour. You might think that your remark is “irreverant” or “edgy”, but other people might find it offensive or distressing. As an example of this, I have (on more than one occasion) been in the room where someone has made what they thought was an innocuous remark about dating, but for someone else in the room that same comment elicited very unpleasant memories of a domestic violence (or sexual assault) situation they’d been undergoing trauma counselling to recover from. Being aware of the diversity of experiences that people might have is important ... my experience from years of teaching is that **there are more people coping with difficult life situations than you think**. It’s rarely a good idea to “push boundaries” in the classroom, and never a good idea when it’s irrelevant to the main topic of discussion!
 

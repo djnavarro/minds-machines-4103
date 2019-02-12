@@ -20,6 +20,9 @@ All of the teaching materials associated with this class are available via the [
 
 Week 1: **Introduction to the topic**
 
+- Introduction to computational cognitive science **[TBA]**
+- Getting started in R: see [R for Psychological Science](http://psyr.org)
+
 <br>
 Week 2: **Top down versus bottom up**
 

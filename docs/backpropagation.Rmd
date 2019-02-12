@@ -1,0 +1,223 @@
+---
+title: '<div class="jumbotron"><h1 class="title toc-ignore display-3" align="center">Minds and Machines</h1><p class="lead" align="center">Danielle Navarro</p></div>'
+output:
+  html_document:
+    theme: flatly
+    highlight: textmate
+    css: mystyle.css
+pagetitle: "Minds and Machines"
+---
+
+# Backpropagation Networks
+
+[<- Back to home](./index.html)
+
+```{r,echo=FALSE,message=FALSE,warning=FALSE}
+rm(list=objects()) # start with a clean workspace
+source("knitr_tweaks.R")
+library(tidyverse,quietly = TRUE)
+```
+
+Last week's exercise covered the Rescorla-Wagner model. In this week's exerise we'll expand this to cover the **backpropagation rule** for learning in connectionist networks. For this exercise, however, we'll only cover the simplest kind of backpropagation network, with just two layers.
+
+## Scripts and data set
+
+- The [iris_recode.csv](./data/iris_recode.csv) file contains the classic iris data slightly reorganised as purely numeric data ([here](./scripts/iris_recode.R)) is the script that generated it. 
+- The first version of the modelling code implements a simple two-layer backpropagation network for the iris data: [iris_twolayer.R](./scripts/iris_twolayer.R)
+- The second version of the code implements the same model, but expressing the learning rules as matrix operations in order to speed up the calculations: [iris_twolayer2.R](./scripts/iris_twolayer2.R)
+
+At the moment the scripts don't do anything other than learn a classification rule. The goal for the full exercise will (eventually) be to examine what the model is learning across the series of "epochs", and consider the relationship between this connectionist network and a probabilistic logistic regression model, but for now it's a bit simpler than that!
+
+In this tutorial we'll only cover a very simple version of a backpropagation network, the two-layer "perceptron" model. There are two versions of the code posted above. The code in the [iris_twolayer.R](./scripts/iris_twolayer.R) script is probably the more intuitive version, as it updates the association weights one at a time, but R code runs much faster when you express the learning rule using matrix operations, which is hwat the [iris_twolayer2.R](./scripts/iris_twolayer2.R) version does. Let's start with a walk through of the more intuitive version... 
+
+## Input and output patterns 
+
+First, let's take a look at the training data. I'm going to use the classic "iris" data set that comes bundled with R, but I've reorganised the data in a form that is a little bit more useful for thinking about the learning problem involved, and expressed it as a numeric matrix. 
+
+```{r}
+irises <- read_csv("http://djnavarro.github.io/minds-machines-4103/iris_recode.csv") %>% as.matrix()
+```
+
+This data set has columns containing many features. First there are the *input features*, which consist of two features relating to the petals, two features relating to the sepal, and a context feature that is 1 for every flower. Additionally, there are three binary valued *output features* corresponding to the species of each flower, dummy coded so that only the correct species has value 1 and the incorrect species have value 0. Here are the names:
+
+```{r}
+input_names <- c("sepal_length", "sepal_width", "petal_length", "petal_width", "context")
+output_names <- c("species_setosa", "species_versicolor", "species_virginica")
+```
+
+So for the first flower, the network would be given this pattern as input:
+
+```{r}
+input <- irises[1, input_names]
+input
+```
+
+and we need to train it to produce this *target pattern* as the output:
+
+```{r}
+target <- irises[1, output_names]
+target 
+```
+
+## Connection weights between input and output
+
+In its simplest form we can describe the knowledge possessed by our network as a set of associative strengths between every input feature and every output feature. In that sense we can think of it as a generalisation of how the Rescorla-Wagner model represents knowledge:
+
+```{r}
+n_input <- length(input_names)
+n_output <- length(output_names)
+n_weights <- n_input * n_output
+```
+
+So what we'll do is create a *weight matrix* that sets the initial associative strength to zero, with a tiny bit of random noise added to each of these associative weights:
+
+```{r}
+weight <- matrix(
+  data = rnorm(n_weights) *.01,
+  nrow = n_input,
+  ncol = n_output,
+  dimnames = list(input_names, output_names)
+)
+weight
+```
+
+Here's the network we want to code:
+
+![](./backprop_irises.png)
+
+
+While we're at it, store a copy for later:
+
+```{r}
+old_weight <- weight
+```
+
+## Making predictions
+
+In the Rescorla-Wagner model, when the learner is shown a compound stimulus with elements A and B with individual associative strengths $v_A$ and $v_B$, the association strength for the compound AB is assumed to be additive $v_{AB} = v_{A} + v_{B}$. We could do this for our backpropagation network too, but it is much more common to assume a logistic activation function. So we'll need to define this activation function:
+
+```{r}
+logit <- function(x){
+  y <- 1/(1 + exp(-x))
+  return(y)
+}
+```
+
+So what we do is first take the `sum` of the inputs and then pass them through our new `logit` function. So let's say we want to compute the strength associated with the first species:
+
+```{r}
+output_1 <- sum(input * weight[,1]) %>% logit() 
+output_1
+```
+
+More generally though we can loop over the three species:
+
+```{r}
+# initialise the output nodes at zero
+output <- rep(0, n_output)
+names(output) <- output_names
+
+# feed forward to every output node by taking a weighted sum of
+# the inputs and passing it through a logit function
+for(o in 1:n_output) {
+  output[o] <- sum(input * weight[,o]) %>% logit() 
+}
+
+# print the result
+output
+```
+
+As you can see, initially the model has no knowledge at all! It's predicting a value of about 0.5 for every category!
+
+## Learning from error
+
+The prediction error is very familiar:
+
+```{r}
+prediction_error <- target - output
+prediction_error
+```
+
+Here is the code implementing the learning rule. What we're doing is looping over every weight in the network, and then adjusting the strength proportional to the prediction error:
+
+```{r}
+learning_rate <- .1
+
+# for each of the weights connecting to an output node...
+for(o in 1:n_output) {
+  for(i in 1:n_input) {
+    
+    # associative learning for this weight scales in a manner that depends on
+    # both the input value and output value. this is similar to the way that
+    # Rescorla-Wagner has CS scaling (alpha) and US scaling (beta) parameters
+    # but the specifics are slightly different (Equation 5 & 6 in the paper)
+    scale_io <- input[i] * output[o] * (1-output[o]) 
+    
+    # adjust the weights proportional to the error and the scaling (Equation 8)
+    weight[i,o] <- weight[i,o] + (prediction_error[o] * scale_io * learning_rate)
+    
+  }
+}
+```
+
+(Let's not worry too much about the `scale_io` factor for now). So let's look at the input, output, target, and prediction error:
+
+```{r}
+input
+output
+target
+prediction_error
+```
+
+Now let's look at how the weights changed:
+
+```{r}
+weight - old_weight
+```
+
+Not surprisingly everything to setosa has gone up and the others down. But notice the scale! 
+
+## Visualising the learning
+
+For the actual simulation I'll set the learning rate to .01, run it for 5000 epochs and average across 100 independent runs just to smooth out any artifacts of randomisation^[The script to run it is [here](./iris_twolater3.R), a csv with the connections weights is [here](./iris_weights.csv), another one (36Mb) with sum squared error to each item on each presentation as a zipped csv file [here](./iris_sse.csv.zip)] How the weights change over epochs:
+
+```{r, cache=TRUE, message=FALSE, warning=FALSE, echo=FALSE}
+tidy_weights <- here::here("output","iris_weights.csv") %>%
+  read_csv()
+```
+
+```{r backpropweights, fig.show='animate', interval=0.05, cache=TRUE, message=FALSE, echo=FALSE, eval = FALSE, fig.width=8, fig.height=5, animation.hook='gifski'}
+for(b in seq(from = 1, to = 4999, by = 10)) {
+  
+  pic4 <- tidy_weights %>%
+    filter(epoch <= b) %>%
+    ggplot(aes(x = epoch, y = strength, colour = feature)) +
+    facet_wrap(~species) +
+    geom_line() +
+    theme_bw() +
+    geom_point(data = tidy_weights %>% filter(epoch == b), 
+               size = 3) +
+    xlim(0,5000) + ylim(-6,6.5)
+  plot(pic4)
+  
+}
+```
+<!-- NOTE:
+ffmpeg -i backpropweights.webm backpropweights.gif -hide_banner
+ffmpeg -i backpropweights.webm backpropweights.mp4 -hide_banner
+-->
+<video width="800" style="display:block; margin: 0 auto;" controls>
+<source src="./img/backpropweights.webm" type="video/webm">
+<source src="./img/backpropweights.mp4" type="video/mp4">
+Your browser does not support the video tag
+</video>
+<br>
+
+
+## Resources
+
+- The Rumelhart et al (1986) paper cached for teaching purposes [here](http://compcogscisydney.org/mm/2018/Rumelhart1986.pdf)
+- A very good, but somewhat technical [summary](http://neuralnetworksanddeeplearning.com/chap2.html) of backpropagation by Michael Nielsen
+- Really nice [resources](http://neuroplausible.com/connectionism) in Python by Olivia Guest.
+
+

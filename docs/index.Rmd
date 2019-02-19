@@ -20,7 +20,7 @@ All of the teaching materials associated with this class are available via the [
 
 Week 1: **Introduction to the topic**
 
-- Introduction to computational cognitive science: slides from 2018 are [here](introduction.pdf)
+- Introduction to computational cognitive science: [slides](introduction.pdf)
 - Getting started in R: exercises will follow [R for Psychological Science](http://psyr.org)
 
 <br>

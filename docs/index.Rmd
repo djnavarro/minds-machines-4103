@@ -32,7 +32,7 @@ Week 2: **Top down versus bottom up**
 <br>
 Week 3: **Associative learning**
 
-- Rescorla, R. A. & Wagner, A. R. (1972) [A theory of Pavlovian conditioning: Variations in the effectiveness of reinforcement and nonreinforcement](https://pdfs.semanticscholar.org/afaf/65883ff75cc19926f61f181a687927789ad1.pdf). In A. H. Black & W. F. Prokasy (eds) *Classical conditioning II: Current Research and Theory* (pp 64-99). New York: Appleton-Century-Crofts **[Lillian Mach]**
+- Rescorla, R. A. & Wagner, A. R. (1972) [A theory of Pavlovian conditioning: Variations in the effectiveness of reinforcement and nonreinforcement](https://pdfs.semanticscholar.org/afaf/65883ff75cc19926f61f181a687927789ad1.pdf). In A. H. Black & W. F. Prokasy (eds) *Classical conditioning II: Current Research and Theory* (pp 64-99). New York: Appleton-Century-Crofts **[Danielle Navarro]**
 - DIY exercise: [Implementing the Rescorla-Wagner model](rescorla_wagner.html)
 
 
@@ -75,7 +75,7 @@ Week 8: **Language and cultural evolution**
 Week 9: **Deep learning versus program learning**
 
 - Mnih, V., Kavukcuoglu, K., Silver, D., Rusu, A. A., Veness, J., Bellemare, M. G., ... & Petersen, S. (2015). [Human-level control through deep reinforcement learning.](https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf) *Nature, 518*(7540), 529. **[Ian Li]**
-- Lake, B. M., Salakhutdinov, R. and Tenenbaum, J. B. (2015). [Human-level concept learning through probabilistic program induction](https://web.mit.edu/cocosci/Papers/Science-2015-Lake-1332-8.pdf). *Science, 350*(6266), 1332–1338. **[Danielle Navarro]**
+- Lake, B. M., Salakhutdinov, R. and Tenenbaum, J. B. (2015). [Human-level concept learning through probabilistic program induction](https://web.mit.edu/cocosci/Papers/Science-2015-Lake-1332-8.pdf). *Science, 350*(6266), 1332–1338. **[Lillian Mach]**
 
 
 ## 2. Assessment structure

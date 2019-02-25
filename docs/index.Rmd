@@ -26,56 +26,56 @@ Week 1: **Introduction to the topic**
 <br>
 Week 2: **Top down versus bottom up**
 
-- Griffiths, T. L., Chater, N., Kemp, C., Perfors, A., & Tenenbaum, J. B. (2010). [Probabilistic models of cognition: Exploring representations and inductive biases](http://cocosci.princeton.edu/tom/papers/probmodelsofcognition.pdf). *Trends in Cognitive Sciences, 14*(8), 357-364.
-- McClelland, J. L., Botvinick, M. M., Noelle, D. C., Plaut, D. C., Rogers, T. T., Seidenberg, M. S., & Smith, L. B. (2010). [Letting structure emerge: Connectionist and dynamical systems approaches to cognition](http://www.cnbc.cmu.edu/~plaut/papers/pdf/McClellandETAL10TICS.approachesCogMod.pdf). *Trends in Cognitive Sciences, 14*(8), 348-356.
+- Griffiths, T. L., Chater, N., Kemp, C., Perfors, A., & Tenenbaum, J. B. (2010). [Probabilistic models of cognition: Exploring representations and inductive biases](http://cocosci.princeton.edu/tom/papers/probmodelsofcognition.pdf). *Trends in Cognitive Sciences, 14*(8), 357-364. **[Shirley Tang]**
+- McClelland, J. L., Botvinick, M. M., Noelle, D. C., Plaut, D. C., Rogers, T. T., Seidenberg, M. S., & Smith, L. B. (2010). [Letting structure emerge: Connectionist and dynamical systems approaches to cognition](http://www.cnbc.cmu.edu/~plaut/papers/pdf/McClellandETAL10TICS.approachesCogMod.pdf). *Trends in Cognitive Sciences, 14*(8), 348-356. **[Jessica Williams]**
 
 <br>
 Week 3: **Associative learning**
 
-- Rescorla, R. A. & Wagner, A. R. (1972) [A theory of Pavlovian conditioning: Variations in the effectiveness of reinforcement and nonreinforcement](https://pdfs.semanticscholar.org/afaf/65883ff75cc19926f61f181a687927789ad1.pdf). In A. H. Black & W. F. Prokasy (eds) *Classical conditioning II: Current Research and Theory* (pp 64-99). New York: Appleton-Century-Crofts
+- Rescorla, R. A. & Wagner, A. R. (1972) [A theory of Pavlovian conditioning: Variations in the effectiveness of reinforcement and nonreinforcement](https://pdfs.semanticscholar.org/afaf/65883ff75cc19926f61f181a687927789ad1.pdf). In A. H. Black & W. F. Prokasy (eds) *Classical conditioning II: Current Research and Theory* (pp 64-99). New York: Appleton-Century-Crofts **[Lillian Mach]**
 - DIY exercise: [Implementing the Rescorla-Wagner model](rescorla_wagner.html)
 
 
 <br>
 Week 4: **Connectionist networks**
 
-- Rumelhart, D. E., Hinton, G. E., & Williams, R. J. (1986). [Learning representations by back-propagating errors](https://www.iro.umontreal.ca/~vincentp/ift3395/lectures/backprop_old.pdf). *Nature, 323*(6088), 533.
+- Rumelhart, D. E., Hinton, G. E., & Williams, R. J. (1986). [Learning representations by back-propagating errors](https://www.iro.umontreal.ca/~vincentp/ift3395/lectures/backprop_old.pdf). *Nature, 323*(6088), 533. **[Nick Kennedy]**
 - DIY exercise: [Implementing a backpropagation network](backpropagation.html)
 
 
 <br>
 Week 5: **Bayesian cognition**
 
-- Griffiths, T. L., & Tenenbaum, J. B. (2006). [Optimal predictions in everyday cognition](http://web.mit.edu/cocosci/Papers/Griffiths-Tenenbaum-PsychSci06.pdf). *Psychological Science, 17*(9), 767-773.
+- Griffiths, T. L., & Tenenbaum, J. B. (2006). [Optimal predictions in everyday cognition](http://web.mit.edu/cocosci/Papers/Griffiths-Tenenbaum-PsychSci06.pdf). *Psychological Science, 17*(9), 767-773. **[James Lian]**
 - DIY exercise: Implementing the optimal predictions model. (TBA - the exercise will be based on the content [here](https://github.com/djnavarro/minds-machines-4103/tree/master/optimalprediction))
 
 
 <br>
 Week 6: **Bayesian perception**
 
-- Feldman N. H. & Griffiths, T. L. (2007). [A rational account of the perceptual magnet effect](http://users.umiacs.umd.edu/~nhf/papers/PerceptualMagnet.pdf). *Proceedings of the 29th Annual Conference of the Cognitive Science Society*. ([long version](http://users.umiacs.umd.edu/~nhf/papers/PerceptualMagnetLong.pdf))
+- Feldman N. H. & Griffiths, T. L. (2007). [A rational account of the perceptual magnet effect](http://users.umiacs.umd.edu/~nhf/papers/PerceptualMagnet.pdf). *Proceedings of the 29th Annual Conference of the Cognitive Science Society*. ([long version](http://users.umiacs.umd.edu/~nhf/papers/PerceptualMagnetLong.pdf))  **[Edmond Fung]**
 - DIY exercise: Implementing the perceptual magnet model (TBA - the exercise will be based on the content [here](https://github.com/djnavarro/minds-machines-4103/tree/master/perceptualmagnet))
 
 
 <br>
 Week 7: **Semantic representation**
 
-- De Deyne, S., Navarro, D. J., Perfors, A., Brysbaert M., and Storms, G. (in press). [The Small World of Words English word association norms for over 12,000 cue word](https://link.springer.com/article/10.3758%2Fs13428-018-1115-7). *Behavior Research Methods* ([preprint version](http://compcogscisydney.org/publications/DeDeyneNPBS_swow.pdf))
+- De Deyne, S., Navarro, D. J., Perfors, A., Brysbaert M., and Storms, G. (in press). [The Small World of Words English word association norms for over 12,000 cue word](https://link.springer.com/article/10.3758%2Fs13428-018-1115-7). *Behavior Research Methods* ([preprint version](http://compcogscisydney.org/publications/DeDeyneNPBS_swow.pdf)) **[Kenneth Revadulla]**
 - DIY exercise: Implementing a semantic network model (TBA - the exercise will be based on the content [here](https://github.com/djnavarro/minds-machines-4103/tree/master/semanticnetwork))
 
 
 <br>
 Week 8: **Language and cultural evolution**
 
-- Navarro, D.J., Perfors, A., Kary, A., Brown, S. and Donkin, C. (2018). [When extremists win: Cultural transmission via iterated learning when priors are heterogeneous](https://onlinelibrary.wiley.com/doi/full/10.1111/cogs.12667) *Cognitive Science, 42*, 2108-2149 ([preprint version](http://compcogscisydney.org/publications/NavarroPKBD_mixedchains.pdf))
+- Navarro, D.J., Perfors, A., Kary, A., Brown, S. and Donkin, C. (2018). [When extremists win: Cultural transmission via iterated learning when priors are heterogeneous](https://onlinelibrary.wiley.com/doi/full/10.1111/cogs.12667) *Cognitive Science, 42*, 2108-2149 ([preprint version](http://compcogscisydney.org/publications/NavarroPKBD_mixedchains.pdf)) **[Janice Yung ]**
 - DIY exercise: Bayesian iterated learning (TBA - the exercise will be based on the content [here](https://github.com/djnavarro/mixedchains))
 
 
 <br>
 Week 9: **Deep learning versus program learning**
 
-- Mnih, V., Kavukcuoglu, K., Silver, D., Rusu, A. A., Veness, J., Bellemare, M. G., ... & Petersen, S. (2015). [Human-level control through deep reinforcement learning.](https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf) *Nature, 518*(7540), 529.
-- Lake, B. M., Salakhutdinov, R. and Tenenbaum, J. B. (2015). [Human-level concept learning through probabilistic program induction](https://web.mit.edu/cocosci/Papers/Science-2015-Lake-1332-8.pdf). *Science, 350*(6266), 1332–1338.
+- Mnih, V., Kavukcuoglu, K., Silver, D., Rusu, A. A., Veness, J., Bellemare, M. G., ... & Petersen, S. (2015). [Human-level control through deep reinforcement learning.](https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf) *Nature, 518*(7540), 529. **[Ian Li]**
+- Lake, B. M., Salakhutdinov, R. and Tenenbaum, J. B. (2015). [Human-level concept learning through probabilistic program induction](https://web.mit.edu/cocosci/Papers/Science-2015-Lake-1332-8.pdf). *Science, 350*(6266), 1332–1338. **[Danielle Navarro]**
 
 
 ## 2. Assessment structure

@@ -11,7 +11,7 @@ library(magrittr)
 # the data are stored as a zipped tab-separated
 # value file. we can read it directly without 
 # manually unzipping...
-swow <- here("network","swow.csv.zip") %>%
+swow <- here("semanticnetwork","swow.csv.zip") %>%
   read_tsv()
 
 # function that takes a set of user-defined words
@@ -97,14 +97,14 @@ visualise(
   words = c("cat", "dog", "horse"),
   thresholds = c("edge" = .05, "label" = 3)
 )
-ggsave(here("network","animals.png"), width=wd, height=ht)
+ggsave(here("semanticnetwork","animals.png"), width=wd, height=ht)
 
 # example:
 visualise(
   words = c("one", "two", "three", "four", "five"),
   thresholds = c("edge" = .04, "label" = 3)
 )
-ggsave(here("network","numbers.png"), width=wd, height=ht)
+ggsave(here("semanticnetwork","numbers.png"), width=wd, height=ht)
 
 
 # example:
@@ -112,7 +112,7 @@ visualise(
   words = c("skirt", "pants", "scarf"),
   thresholds = c("edge" = .02, "label" = 10)
 )
-ggsave(here("network","clothes.png"), width=wd, height=ht)
+ggsave(here("semanticnetwork","clothes.png"), width=wd, height=ht)
 
 
 # example:
@@ -120,7 +120,7 @@ visualise(
   words = c("mother", "father", "daughter", "son"),
   thresholds = c("edge" = .03, "label" = 5)
 )
-ggsave(here("network","family.png"), width=wd, height=ht)
+ggsave(here("semanticnetwork","family.png"), width=wd, height=ht)
 
 
 # example:
@@ -128,7 +128,7 @@ visualise(
   words = c("cup", "hail", "teacher"),
   thresholds = c("edge" = .012, "label" = 5)
 )
-ggsave(here("network","arbitrary.png"), width=wd, height=ht)
+ggsave(here("semanticnetwork","arbitrary.png"), width=wd, height=ht)
 
 
 # example:
@@ -136,7 +136,7 @@ visualise(
   words = c("psychology", "statistics", "physics"),
   thresholds = c("edge" = .03, "label" = 6)
 )
-ggsave(here("network","science.png"), width=wd, height=ht)
+ggsave(here("semanticnetwork","science.png"), width=wd, height=ht)
 
 
 # example:
@@ -144,7 +144,7 @@ visualise(
   words = c("tweet","twitter","blog"),
   thresholds = c("edge" = .01, "label" = 8)
 )
-ggsave(here("network","socialmedia.png"), width=wd, height=ht)
+ggsave(here("semanticnetwork","socialmedia.png"), width=wd, height=ht)
 
 
 # example:
@@ -152,7 +152,7 @@ visualise(
   words = c("man","woman"),
   thresholds = c("edge" = .04, "label" = 4)
 )
-ggsave(here("network","gender.png"), width=wd, height=ht)
+ggsave(here("semanticnetwork","gender.png"), width=wd, height=ht)
 
 
 

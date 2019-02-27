@@ -84,7 +84,7 @@ Week 9: **Deep learning versus program learning**
 
 - *Participation* (20%). Class participation is an important part of the course. That means that you are expected to read the papers *before* coming to class. If you haven't read the papers and so can't contribute much, low marks will be given. It also includes participation in the programming exercises - *however*, this is not a programming class and in this respect the assessment is based almost entirely on effort and engagement, not on whether you succeed in implementing the models. Finally, I do try to keep track of how people participate. Please see below for some thoughts as to what I consider a "good participant" to be - it doesn't necessarily mean talking a lot! 
 
-- *Essay* (50%) – a 2000 word essay. To be submitted via the Turnitin link on Moodle, deadline to be confirmed (but will be toward the end of term). 
+- *Essay* (50%) – a 2000 word essay. To be submitted via the Turnitin link on Moodle. Due date: **Friday 26th April**
 
 ## 3. The essay question
 

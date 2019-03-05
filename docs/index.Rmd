@@ -37,42 +37,45 @@ Week 3: **Associative learning**
 
 
 <br>
-Week 4: **Connectionist networks**
+Week 4: **[No class: Danielle away]**
+
+<br>
+Week 5: **Connectionist networks**
 
 - Rumelhart, D. E., Hinton, G. E., & Williams, R. J. (1986). [Learning representations by back-propagating errors](https://www.iro.umontreal.ca/~vincentp/ift3395/lectures/backprop_old.pdf). *Nature, 323*(6088), 533. **[Nick Kennedy]**
 - DIY exercise: [Implementing a backpropagation network](backpropagation.html)
 
 
 <br>
-Week 5: **Bayesian cognition**
+Week 6: **Bayesian cognition**
 
 - Griffiths, T. L., & Tenenbaum, J. B. (2006). [Optimal predictions in everyday cognition](http://web.mit.edu/cocosci/Papers/Griffiths-Tenenbaum-PsychSci06.pdf). *Psychological Science, 17*(9), 767-773. **[James Lian]**
 - DIY exercise: Implementing the optimal predictions model. (TBA - the exercise will be based on the content [here](https://github.com/djnavarro/minds-machines-4103/tree/master/optimalprediction))
 
 
 <br>
-Week 6: **Bayesian perception**
+Week 7: **Bayesian perception**
 
 - Feldman N. H. & Griffiths, T. L. (2007). [A rational account of the perceptual magnet effect](http://users.umiacs.umd.edu/~nhf/papers/PerceptualMagnet.pdf). *Proceedings of the 29th Annual Conference of the Cognitive Science Society*. ([long version](http://users.umiacs.umd.edu/~nhf/papers/PerceptualMagnetLong.pdf))  **[Edmond Fung]**
 - DIY exercise: Implementing the perceptual magnet model (TBA - the exercise will be based on the content [here](https://github.com/djnavarro/minds-machines-4103/tree/master/perceptualmagnet))
 
 
 <br>
-Week 7: **Semantic representation**
+Week 8: **Semantic representation**
 
 - De Deyne, S., Navarro, D. J., Perfors, A., Brysbaert M., and Storms, G. (in press). [The Small World of Words English word association norms for over 12,000 cue word](https://link.springer.com/article/10.3758%2Fs13428-018-1115-7). *Behavior Research Methods* ([preprint version](http://compcogscisydney.org/publications/DeDeyneNPBS_swow.pdf)) **[Kenneth Revadulla]**
 - DIY exercise: Implementing a semantic network model (TBA - the exercise will be based on the content [here](https://github.com/djnavarro/minds-machines-4103/tree/master/semanticnetwork))
 
 
 <br>
-Week 8: **Language and cultural evolution**
+Week 9: **Language and cultural evolution**
 
 - Navarro, D.J., Perfors, A., Kary, A., Brown, S. and Donkin, C. (2018). [When extremists win: Cultural transmission via iterated learning when priors are heterogeneous](https://onlinelibrary.wiley.com/doi/full/10.1111/cogs.12667) *Cognitive Science, 42*, 2108-2149 ([preprint version](http://compcogscisydney.org/publications/NavarroPKBD_mixedchains.pdf)) **[Janice Yung ]**
 - DIY exercise: Bayesian iterated learning (TBA - the exercise will be based on the content [here](https://github.com/djnavarro/mixedchains))
 
 
 <br>
-Week 9: **Deep learning versus program learning**
+Week 10: **Deep learning versus program learning**
 
 - Mnih, V., Kavukcuoglu, K., Silver, D., Rusu, A. A., Veness, J., Bellemare, M. G., ... & Petersen, S. (2015). [Human-level control through deep reinforcement learning.](https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf) *Nature, 518*(7540), 529. **[Ian Li]**
 - Lake, B. M., Salakhutdinov, R. and Tenenbaum, J. B. (2015). [Human-level concept learning through probabilistic program induction](https://web.mit.edu/cocosci/Papers/Science-2015-Lake-1332-8.pdf). *Science, 350*(6266), 1332–1338. **[Lillian Mach]**

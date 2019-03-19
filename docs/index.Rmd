@@ -14,7 +14,7 @@ rm(list=objects()) # start with a clean workspace
 
 One of the long-standing tensions in cognitive science is the relationship between human cognition and machine learning. Can modern machine learning methods teach us anything interesting about the human mind? Does cognitive psychology have a role to play in guiding the development of artificial intelligence systems? Why are machine learning systems so much better than humans at chess, but not so good at the Atari game Frostbite? The goal in this elective is to provide an introduction to the current state of the art in computational cognitive science. On the "minds" side, we'll discuss papers examining topics in human learning, reasoning, decision making and social cognition. On the "machines" side, we'll go through a very gentle introduction to programming in R and building computational models of human cognition. 
 
-All of the teaching materials associated with this class are available via the [GitHub repository](https://github.com/djnavarro/minds-machines-4103), but if you aren't familiar with git (and very few psychology students are), everything you need can be downloaded from this website.
+All of the teaching materials associated with this class are available via the [GitHub repository](https://github.com/djnavarro/minds-machines-4103), but if you aren't familiar with git (and very few psychology students are), everything you need can be downloaded from this website. You can also download the entire website, project file and scripts as a single [zip file](mm.zip)
 
 ## 1. Class schedule
 
